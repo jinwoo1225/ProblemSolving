@@ -18,6 +18,7 @@ def solution(jobs):
             time += 1
 
         queue.sort(key=lambda x: x[1], reverse=True)
+        print(queue)
         if queue:
             request, duration = queue.pop()
             time += duration
